@@ -16,11 +16,13 @@ import org.springframework.hateoas.Link;
 import org.springframework.hateoas.Resource;
 import org.springframework.hateoas.ResourceProcessor;
 import org.springframework.hateoas.mvc.ControllerLinkBuilder;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 /**
  *
  * @author rafaelkperes
  */
+@CrossOrigin
 @Configuration
 public class RestConfiguration extends RepositoryRestMvcConfiguration {
 

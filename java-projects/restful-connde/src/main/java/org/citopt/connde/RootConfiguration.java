@@ -1,18 +1,22 @@
 package org.citopt.connde;
 
 import com.mongodb.Mongo;
+
 import java.net.UnknownHostException;
+
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 /**
  *
  * @author rafaelkperes
  */
+@CrossOrigin
 @Configuration
 @Import({MongoConfiguration.class})
 public class RootConfiguration {
