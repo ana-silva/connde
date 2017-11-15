@@ -1,17 +1,20 @@
 package org.citopt.connde.domain.component;
 
 import javax.persistence.GeneratedValue;
+
 import org.citopt.connde.domain.device.Device;
 import org.citopt.connde.domain.type.Type;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Reference;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 /**
  *
  * @author rafaelkperes
  */
+@CrossOrigin
 @Document
 public abstract class Component {
     

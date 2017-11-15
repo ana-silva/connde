@@ -5,6 +5,7 @@ import java.net.UnknownHostException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.logging.Logger;
+
 import org.citopt.connde.RestConfiguration;
 import org.citopt.connde.domain.device.Device;
 import org.citopt.connde.domain.component.ActuatorValidator;
@@ -18,6 +19,7 @@ import org.springframework.data.rest.webmvc.RepositoryLinksResource;
 import org.springframework.hateoas.ResourceProcessor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,6 +32,7 @@ import org.citopt.connde.repository.DeviceRepository;
  *
  * @author rafaelkperes
  */
+@CrossOrigin
 @RestController
 @RequestMapping(RestConfiguration.BASE_PATH)
 public class RestApiController implements
